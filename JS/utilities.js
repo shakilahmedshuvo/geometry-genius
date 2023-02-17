@@ -1,1 +1,1 @@
-console.log("ei je js er file")
+console.log("this is a javascript file")
