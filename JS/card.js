@@ -50,7 +50,7 @@ document.getElementById('btn-rectangle').addEventListener('click', function () {
         return;
     }
     number += 1
-    const inputMultification = 0.5 * rectangleInputFirst * rectangleInputSecond;
+    const inputMultification = rectangleInputFirst * rectangleInputSecond;
     displayTheValue(getRectangleTitle, inputMultification.toFixed(2))
 })
 // 3.function for Parallelogram seciton
@@ -64,7 +64,7 @@ document.getElementById('btn-parallelogram').addEventListener('click', function 
         return;
     }
     number += 1
-    const inputMultification = 0.5 * ParallelogramInputFirst * ParallelogramInputSecond;
+    const inputMultification = ParallelogramInputFirst * ParallelogramInputSecond;
     displayTheValue(getParallelogramTitle, inputMultification.toFixed(2))
 })
 // 4.function for Rhombus seciton
@@ -106,6 +106,6 @@ document.getElementById('btn-ellipse').addEventListener('click', function () {
         return;
     }
     number += 1
-    const inputMultification = 0.5 * ellipseInputFirst * ellipseInputSecond;
+    const inputMultification = 3.14 * ellipseInputFirst * ellipseInputSecond;
     displayTheValue(getEllipseTitle, inputMultification.toFixed(2))
 })
