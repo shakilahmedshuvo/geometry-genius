@@ -7,3 +7,18 @@ function getElementById(idInput) {
     return getValueStringToNumber;
 }
 
+
+function displayTheValue(inputName, totalValue) {
+    const section = document.getElementById("showDataHere");
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+
+    <td>${NO}</td>
+
+    <td>${inputName}</td>
+
+    <td>${totalValue}</td>
+    `
+    section.appendChild(td);
+}
+
