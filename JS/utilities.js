@@ -1,1 +1,3 @@
-console.log("this is a javascript file")
+const secondPage = document.getElementById('btn-blog').addEventListener('click', function () {
+    window.location.href = 'secondPage.html';
+})
