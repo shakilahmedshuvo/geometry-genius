@@ -1,9 +1,9 @@
 // first function
 function getElementByIdInput(idInput) {
-    const getIdinput = document.getElementById(idInput);
-    const idInputString = getIdinput.value;
+    const getIdInput = document.getElementById(idInput);
+    const idInputString = getIdInput.value;
     const getValueStringToNumber = parseFloat(idInputString);
-    getIdinput.value = "";
+    getIdInput.value = "";
     return getValueStringToNumber;
 }
 
@@ -12,19 +12,22 @@ function displayTheValue(inputName, totalValue) {
     const section = document.getElementById('showDataHere');
     const tr = document.createElement('tr');
     tr.innerHTML = `
-
-    <td>${number}</td>
-
-    <td>${inputName}</td>
-
-    <td>${totalValue}</td>
+    <td>
+        ${number}
+    </td>
+    <td>
+        ${inputName}
+    </td>
+    <td>
+        ${totalValue}
+    </td>
     `;
     section.appendChild(tr);
 }
 
 let number = 0;
 
-//  1.function for triangle seciton
+//  1.function for triangle section
 document.getElementById('btn-triangle').addEventListener('click', function () {
     const getTriangleTitle = document.getElementById('triangle-title').innerText;
     const triangleInputFirst = getElementByIdInput('triangle-input-one');
@@ -35,11 +38,11 @@ document.getElementById('btn-triangle').addEventListener('click', function () {
         return;
     }
     number += 1
-    const inputMultification = 0.5 * triangleInputFirst * triangleInputSecond;
-    displayTheValue(getTriangleTitle, inputMultification.toFixed(2))
+    const inputMultiplication = 0.5 * triangleInputFirst * triangleInputSecond;
+    displayTheValue(getTriangleTitle, inputMultiplication.toFixed(2))
 })
 
-// 2.function for Rectangle seciton
+// 2.function for Rectangle section
 document.getElementById('btn-rectangle').addEventListener('click', function () {
     const getRectangleTitle = document.getElementById('rectangle-title').innerText;
     const rectangleInputFirst = getElementByIdInput('rectangle-input-field-one');
@@ -50,10 +53,10 @@ document.getElementById('btn-rectangle').addEventListener('click', function () {
         return;
     }
     number += 1
-    const inputMultification = rectangleInputFirst * rectangleInputSecond;
-    displayTheValue(getRectangleTitle, inputMultification.toFixed(2))
+    const inputMultiplication = rectangleInputFirst * rectangleInputSecond;
+    displayTheValue(getRectangleTitle, inputMultiplication.toFixed(2))
 })
-// 3.function for Parallelogram seciton
+// 3.function for Parallelogram section
 document.getElementById('btn-parallelogram').addEventListener('click', function () {
     const getParallelogramTitle = document.getElementById('parallelogram-title').innerText;
     const ParallelogramInputFirst = getElementByIdInput('parallelogram-input-one');
@@ -64,8 +67,8 @@ document.getElementById('btn-parallelogram').addEventListener('click', function 
         return;
     }
     number += 1
-    const inputMultification = ParallelogramInputFirst * ParallelogramInputSecond;
-    displayTheValue(getParallelogramTitle, inputMultification.toFixed(2))
+    const inputMultiplication = ParallelogramInputFirst * ParallelogramInputSecond;
+    displayTheValue(getParallelogramTitle, inputMultiplication.toFixed(2))
 })
 // 4.function for Rhombus seciton
 document.getElementById('btn-rhombus').addEventListener('click', function () {
@@ -78,10 +81,10 @@ document.getElementById('btn-rhombus').addEventListener('click', function () {
         return;
     }
     number += 1
-    const inputMultification = 0.5 * rhombusInputFirst * rhombusInputSecond;
-    displayTheValue(getRhombusTitle, inputMultification.toFixed(2))
+    const inputMultiplication = 0.5 * rhombusInputFirst * rhombusInputSecond;
+    displayTheValue(getRhombusTitle, inputMultiplication.toFixed(2))
 })
-// 5.function for Pentagon seciton
+// 5.function for Pentagon section
 document.getElementById('btn-pentagon').addEventListener('click', function () {
     const getPentagonTitle = document.getElementById('pentagon-title').innerText;
     const PentagonInputFirst = getElementByIdInput('pentagon-input-field-one');
@@ -92,10 +95,10 @@ document.getElementById('btn-pentagon').addEventListener('click', function () {
         return;
     }
     number += 1
-    const inputMultification = 0.5 * PentagonInputFirst * PentagonInputSecond;
-    displayTheValue(getPentagonTitle, inputMultification.toFixed(2))
+    const inputMultiplication = 0.5 * PentagonInputFirst * PentagonInputSecond;
+    displayTheValue(getPentagonTitle, inputMultiplication.toFixed(2))
 })
-// 6.function for Ellipse seciton
+// 6.function for Ellipse section
 document.getElementById('btn-ellipse').addEventListener('click', function () {
     const getEllipseTitle = document.getElementById('ellipse-title').innerText;
     const ellipseInputFirst = getElementByIdInput('ellipse-input-field-one');
@@ -106,6 +109,6 @@ document.getElementById('btn-ellipse').addEventListener('click', function () {
         return;
     }
     number += 1
-    const inputMultification = 3.14 * ellipseInputFirst * ellipseInputSecond;
-    displayTheValue(getEllipseTitle, inputMultification.toFixed(2))
+    const inputMultiplication = 3.14 * ellipseInputFirst * ellipseInputSecond;
+    displayTheValue(getEllipseTitle, inputMultiplication.toFixed(2))
 })
